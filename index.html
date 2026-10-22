@@ -411,9 +411,12 @@
     .logo-card.logo-tpp { height: 188px; padding: 14px; }
     .logo-tpp .tpp-mark { display: block; width: min(310px, 100%); }
     .logo-card.logo-vedomosti { padding: 14px; }
-    .logo-card.logo-vedomosti img { max-height: 110px; }
+    .logo-card.logo-vedomosti img { height: auto; max-height: 110px; }
     .logo-card.logo-minpromtorg { height: 188px; padding: 14px; }
-    .logo-card.logo-minpromtorg img { max-height: 160px; }
+    .logo-card.logo-minpromtorg img { max-height: 158px; }
+    @media(min-width: 981px) {
+      .logo-grid .logo-card { height: 188px; }
+    }
     @media(max-width: 980px) {
       .logo-card.logo-tpp { grid-column: 1 / -1; }
       .logo-card.logo-vedomosti,
